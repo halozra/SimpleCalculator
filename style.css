@@ -1,0 +1,108 @@
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(59,59,59,1) 27%, rgba(255,253,253,1) 100%);
+}
+/* Calculator Container */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    background-color: #222;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Display Screen */
+#display {
+    background-color: #000;
+    height: 80px;
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px 15px;
+    border-bottom: 2px solid #444;
+    outline: none;
+}
+
+/* Button Grid */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* General Button Styling */
+button {
+    height: 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Operator Buttons */
+.btn-operator {
+    background-color: #E67E22;
+}
+
+.btn-operator:hover {
+    background-color: #F39C12;
+}
+
+/* Clear Button */
+#btn-clear {
+    background-color: #E74C3C;
+}
+
+#btn-clear:hover {
+    background-color: #C0392B;
+}
+
+/* Equal Button */
+#btn-equal {
+    background-color: #27AE60;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+#btn-equal:hover {
+    background-color: #2ECC71;
+}
+
+/* Responsive Design */
+@media (max-width: 600px){
+    #display {
+        font-size: 1.5rem;
+        height: 60px;
+    }
+
+    button {
+        height: 60px;
+        font-size: 1rem;
+    }
+}

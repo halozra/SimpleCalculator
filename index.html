@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="btn-grid">
+            <button type="button" id="btn-clear" onclick="buttonClear()">C</button>
+            <button type="button" onclick="buttonValue('1')">1</button>
+            <button type="button" onclick="buttonValue('2')">2</button>
+            <button type="button" onclick="buttonValue('3')">3</button>
+            <button type="button" class="btn-operator" onclick="buttonValue('+')">+</button>
+            <button type="button" onclick="buttonValue('4')">4</button>
+            <button type="button" onclick="buttonValue('5')">5</button>
+            <button type="button" onclick="buttonValue('6')">6</button>
+            <button type="button" class="btn-operator" onclick="buttonValue('-')">-</button>
+            <button type="button" onclick="buttonValue('7')">7</button>
+            <button type="button" onclick="buttonValue('8')">8</button>
+            <button type="button" onclick="buttonValue('9')">9</button>
+            <button type="button" class="btn-operator" onclick="buttonValue('*')">*</button>
+            <button type="button" id="btn-equal" onclick="buttonCalculator()">=</button>
+            <button type="button" onclick="buttonValue('0')">0</button>
+            <button type="button" onclick="buttonValue('.')">.</button>
+            <button type="button" class="btn-operator" onclick="buttonValue('/')">/</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
